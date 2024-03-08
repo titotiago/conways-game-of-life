@@ -5,4 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "https://titotiago.github.io/conways-game-of-life/",
+  optimizeDeps: {
+    include: ["src/**/*.tsx"],
+  },
 });
