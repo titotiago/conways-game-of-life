@@ -79,6 +79,7 @@ class GameOfLife {
 
   start(): void {
     if (!this.intervalId) {
+      //@ts-expect-error
       this.intervalId = setInterval(() => {
         this.updateCells();
       }, this.tickSpeed);
